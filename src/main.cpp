@@ -167,7 +167,7 @@ class BMSData {
       }
       http.end();
       return false;
-    }
+    }return false;
   }
 };
 
