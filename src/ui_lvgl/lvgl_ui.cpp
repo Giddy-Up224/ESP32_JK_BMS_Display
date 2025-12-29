@@ -33,7 +33,7 @@ lv_obj_t * new_screen(lv_obj_t * parent) {
   lv_obj_set_layout(obj, LV_LAYOUT_FLEX);
   lv_obj_set_flex_flow(obj, LV_FLEX_FLOW_COLUMN);
   lv_obj_set_flex_align(obj, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER);
-  lv_obj_set_style_pad_top(obj, 20, LV_PART_MAIN);
+  lv_obj_set_style_pad_top(obj, 0, LV_PART_MAIN); // no space at the top
   lv_obj_set_style_pad_row(obj, 10, LV_PART_MAIN);
 
   return obj;
