@@ -11,6 +11,7 @@ void setup_soc_arc(lv_obj_t * parent) {
   lv_arc_set_range(soc_arc, LDR_ARC_MIN, LDR_ARC_MAX);
   lv_arc_set_value(soc_arc, 0);
   lv_obj_set_style_bg_color(soc_arc, SOC_HIGH_COLOR, 0);
+  lv_obj_remove_style(soc_arc, NULL, LV_PART_KNOB); // remove the little circle knob
   
   soc_label = lv_label_create(parent);
   lv_label_set_text(soc_label, "0%");
