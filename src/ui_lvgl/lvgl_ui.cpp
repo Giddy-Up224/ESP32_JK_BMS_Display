@@ -53,12 +53,12 @@ void main_screen() {
     lv_obj_t* tab_btns = lv_tabview_get_tab_btns(main_tabview);
     lv_obj_set_height(tab_btns, 30);
 
-    lv_obj_t* home_tab = lv_tabview_add_tab(main_tabview, "Home");
-    lv_obj_t* info_tab = lv_tabview_add_tab(main_tabview, "Info");
-    lv_obj_t* cell_tab = lv_tabview_add_tab(main_tabview, "Cell V");
-    lv_obj_t* res_tab = lv_tabview_add_tab(main_tabview, "Wire Res.");
+    lv_obj_t* batt_1_tab = lv_tabview_add_tab(main_tabview, "Batt 1");
+    lv_obj_t* batt_2_tab = lv_tabview_add_tab(main_tabview, "Batt 2");
+    lv_obj_t* batt_3_tab = lv_tabview_add_tab(main_tabview, "Batt 3");
+    lv_obj_t* batt_4_tab = lv_tabview_add_tab(main_tabview, "Batt 4");
 
-    setup_soc_arc(home_tab);
+    setup_soc_arc(batt_1_tab);
     //soc_label = lv_label_create(scr_main);
     //lv_obj_align(soc_label, LV_ALIGN_CENTER, 0, 0);
     //lv_label_set_text(soc_label, "--");
