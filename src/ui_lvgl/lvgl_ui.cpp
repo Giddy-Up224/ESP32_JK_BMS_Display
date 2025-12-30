@@ -13,7 +13,7 @@ void setup_soc_arc(lv_obj_t * parent) {
   lv_obj_set_style_bg_color(soc_arc, SOC_HIGH_COLOR, 0);
   lv_obj_remove_style(soc_arc, NULL, LV_PART_KNOB); // remove the little circle knob
   
-  soc_label = lv_label_create(parent);
+  soc_label = lv_label_create(soc_arc);
   lv_label_set_text(soc_label, "0%");
   lv_obj_align(soc_label, LV_ALIGN_CENTER, 0, 0);
 }
