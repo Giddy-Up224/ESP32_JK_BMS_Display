@@ -1,6 +1,8 @@
 #ifndef BMSDATA_H
 #define BMSDATA_H
+
 #include <Arduino.h>
+#include <vector>
 
 
 class BMSData {
